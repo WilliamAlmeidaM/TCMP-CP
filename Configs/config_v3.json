@@ -1,0 +1,19 @@
+{
+  "kerberos_user": "s-traza_prod_mov_prt",
+  "impala_host": "savcedge-a2ab52cc.ms.davivienda.cloud:25003",
+  "ca_cert": "caroot-davivienda.pem",
+  "MAX_PERIODO_QUERY": "SELECT max(PERIODO) as max_periodo FROM {db}.{table};",
+  "bd_temp_old": "est_temporal",
+  "bd_temp": "8096_tec_planeacion_y_riesgo",
+  "bd_cruda_old": "streaming",
+  "bd_cruda": "8096_tec_planeacion_y_riesgo",
+  "bd_final_old": "res_trazabilidad",
+  "bd_final": "8096_tec_planeacion_y_riesgo",
+  "bd_fabrica_credito": "fabrica_credito",
+
+  "LIMPIARTABLATEMPORAL": "DELETE FROM   {bd_temp}.temp_apertura_fic_trazabilidad_nrt",
+  "": "",
+  "CONTARTABLATEMPORAL": "SELECT COUNT(3) CANTIDAD  FROM   {bd_temp}.temp_apertura_fic_trazabilidad_nrt",
+  "": ""
+}
+

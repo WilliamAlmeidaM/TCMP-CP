@@ -1,0 +1,17 @@
+{
+ "kerberos_user": "s-kafkastreaming",
+ "impala_host": "savcedge-a2ab52cc.ms.davivienda.cloud:25003",
+ "ca_cert": "caroot-davivienda.pem",
+ "MAX_PERIODO_QUERY": "SELECT max(PERIODO) as max_periodo FROM {db}.{table};",
+ "bd_temp_old": "est_temporal",
+ "bd_temp": "8096_tec_planeacion_y_riesgo",
+ "bd_cruda_old": "streaming",
+ "bd_cruda": "8096_tec_planeacion_y_riesgo",
+ "bd_final_old": "utilitarios",
+ "bd_final": "8096_tec_planeacion_y_riesgo",
+ "GRABAR_LOG": "INSERT INTO {BD_DESTINO}.trazabilidad_log_proceso (PERIODO, SERVICIO , FECHA_PROCESO, PROCESO, HORA_INICIO, HORA_FIN, DURACION) VALUES({PERIODO}, '{SERVICIO}', {FECHA_PROCESO}, '{PROCESO}', '{HORA_INICIO}', '{HORA_FIN}', '{DURACION}');", 
+ "":"",
+ "INVALIDAR_METADATA": "INVALIDATE METADATA {bd_final}.{TABLA}",
+ "":""
+}
+
